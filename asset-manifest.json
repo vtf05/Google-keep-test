@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/google-keep-test/static/css/main.359de8cc.css",
+    "main.js": "/google-keep-test/static/js/main.dfbdf6df.js",
+    "index.html": "/google-keep-test/index.html",
+    "main.359de8cc.css.map": "/google-keep-test/static/css/main.359de8cc.css.map",
+    "main.dfbdf6df.js.map": "/google-keep-test/static/js/main.dfbdf6df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.359de8cc.css",
+    "static/js/main.dfbdf6df.js"
+  ]
+}
