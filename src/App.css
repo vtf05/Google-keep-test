@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container-2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0a0000;
+}
+
+.search-input {
+  width: 50rem;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ede8e8;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  right: 15rem
+
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+}
+
+.side-nav {
+  width: 250px;
+  padding: 20px;
+
+  /* box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-item {
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.note-input-placeholder {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: text;
+}
+
+.note-title-input{
+  width: 98%;
+  cursor: text;
+  margin-bottom: -2px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 4px 1px 1px;
+  resize: none;
+  /* border-top: 1px solid black;
+  border-right:  1px solid black;
+  border-left:  1px solid black;
+  border-bottom: 1px dotted rgb(255, 255, 255); */
+
+}
+
+/* .note-content-input-wrapper {
+  display: flex;
+  align-items: center;
+} */
+
+.note-title-input:focus {
+  border: none;
+  outline:   #fbfbfb;
+  /* border-top: 1px solid rgb(0, 0, 0);
+  border-right:  1px solid black;
+  border-left:  1px solid black;
+  border-bottom:  1px solid rgb(255, 255, 255); */
+}
+.note-content-input {
+  flex: 1;
+  width: 100%;
+  margin-bottom: 8px;
+  cursor: text;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 1px 1px 4px 4px;
+  resize: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-right:  1px solid black;
+  border-left:  1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+/* .note-content-input:focus {
+  border: 1px solid #1d0404;
+  outline:   #1d0404;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-right:  1px solid black;
+  border-left:  1px solid black;
+  border-bottom: 1px solid black;
+} */
+
+.save-button {
+  padding: 8px 12px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.add-note.expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  border-radius: 14px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: text;
+  width : 36rem ;
+  margin: 2rem;
+  margin-left: 13rem;
+
+}
+
+
+.add-note.expanded .note-input-placeholder {
+  display: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: text;
+  width : 36rem ;
+  margin: 2rem;
+  margin-left: 13rem;
+
+}
+.note-input-placeholder {
+  padding: 8px;
+  cursor: text;
+  width : 36rem ;
+  margin: 2rem;
+  margin-left: 13rem;
+  border-radius: 14px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.add-note.expanded .note-title-input,
+.add-note.expanded .note-content-input,
+.add-note.expanded .save-button {
+  display: block;
+
+}
+
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.note {
+  width: calc(23% - 22px); 
+  margin-bottom: 20px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 5px;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 3px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  right: 3px;
+}
+
+.delete-icon{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  right: 2px;
+  bottom: 2px;
+}
+.note:hover .icon {
+  opacity: 1; /* Show the icon when the parent .note is hovered */
+}
+
+.note:hover .delete-icon{
+  opacity: 1;
+}
+
+.note-heading{
+  left: 32px;
+  position: relative;
+}
+
+
+.add-note {
+  border: none;
+  padding: 8px;
+}
+
+/* Styles for the textarea-like element */
+.note-content-input-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.note-content-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  padding: 8px;
+}
+
+/* Styles for the button */
+.custom-button {
+  margin-left: 8px;
+  background-color: #ffffff;
+  color: rgb(26, 2, 2);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #ffffff;
+}
+
+/* Style for the "Add Note..." placeholder text */
+.note-input-placeholder {
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+}
